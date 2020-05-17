@@ -1,66 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-    <link rel="stylesheet" href="./static/css/Style.css" />
-    <link
-      rel="shortcut icon"
-      href="./static/img/favicon-32x32.png"
-      type="image/x-icon"
-    />
-    <title>Ping-coming-soon</title>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <div class="title">
-          <h1>PING<span>.</span></h1>
-          <h2>We are launching <span>soon!</span></h2>
-          <p class="descrip">Susbcribe and get notified</p>
-        </div>
-        <div class="Inputs wrap">
-          <input
-            class="email"
-            type="email"
-            name="email"
-            id="email"
-            placeholder=" Your email address..."
-          />
-          <p class="MsgError">Please provide a valid email address</p>
-          <input type="button" value="Notify Me" id="btn" />
-        </div>
-      </header>
-      <div class="body">
-        <img
-          src="./static/img/illustration-dashboard.png"
-          alt="Dashboard Image"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./static/css/Style.css" />
+  <link rel="shortcut icon" href="./static/img/favicon-32x32.png" type="image/x-icon" />
+  <title>Ping-coming-soon</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="title">
+        <h1>PING<span>.</span></h1>
+        <h2>We are launching <span>soon!</span></h2>
+        <p class="descrip">Susbcribe and get notified</p>
       </div>
-      <footer>
-        <div class="social">
-          <ul>
-            <div class="social-container">
-              <div class="social-one">
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-              </div>
-            </div>
-          </ul>
-        </div>
-        <p>
-          &copy;Copyright Ping. All rights reserved.
-        </p>
-      </footer>
+      <div class="Inputs wrap">
+        <input class="email" type="email" name="email" id="email" placeholder=" Your email address..."  aria-labelledby="myBillingId myNameId"/>
+        <p class="MsgError">Please provide a valid email address</p>
+        <input type="button" value="Notify Me" id="btn" />
+      </div>
+    </header>
+    <div class="body">
+      <img src="./static/img/illustration-dashboard.png" alt="Dashboard Image" />
     </div>
-    <script
-      src="https://kit.fontawesome.com/54ab5c1dbd.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./static/js/App.js"></script>
-  </body>
+    <footer>
+      <div class="social">
+        <ul>
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+        </ul>
+      </div>
+      <p>
+        &copy;Copyright Ping. All rights reserved.
+      </p>
+    </footer>
+  </div>
+  <script src="https://kit.fontawesome.com/54ab5c1dbd.js" crossorigin="anonymous"></script>
+  <script src="./static/js/App.js"></script>
+</body>
+
 </html>
