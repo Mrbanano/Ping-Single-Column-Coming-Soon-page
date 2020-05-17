@@ -1,67 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
-:root{
-/*Primary*/
---Blue: hsl(223, 87%, 63%);
-/*econdary*/
---PaleBlue: hsl(223, 100%, 88%);
---LightRed: hsl(354, 100%, 66%);
-/*Neutral*/
---Gray: hsl(0, 0%, 59%);
---VeryDarkBlue: hsl(209, 33%, 12%);
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+:root {
+  /*Primary*/
+  --Blue: hsl(223, 87%, 63%);
+  /*econdary*/
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+  /*Neutral*/
+  --Gray: hsl(0, 0%, 59%);
+  --VeryDarkBlue: hsl(209, 33%, 12%);
 }
-*{
+* {
   margin: 0;
   padding: 0;
   font-size: 20px;
 }
-body{
+body {
   min-width: 375px;
   max-width: 1440px;
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
-.container{
+.container {
   width: 100%;
 }
-.wrap{
+.wrap {
   padding: 0 2.3em;
 }
-.title{
+.title {
   margin: 4.275em 0 0 0;
 }
-.title h1{
-  margin: 0 8em 2.05em ;
+.title h1 {
+  margin: 0 8em 2.05em;
 }
-.title h1 span{
+.title h1 span {
   color: var(--Blue);
 }
-.title h2{
+.title h2 {
   margin: 0 3.5em;
   font-weight: 300;
 }
-.title h2 span{
+.title h2 span {
   font-weight: 600;
 }
 
-.title p{
+.title p {
   text-align: center;
-  margin: 2.50em 0 3.5em;
+  margin: 2.5em 0 3.5em;
   font-size: 0.5em;
+  color: var(--VeryDarkBlue);
 }
-.Inputs{
+.Inputs {
   width: 72%;
   display: grid;
   grid-template-columns: 1fr;
 }
-.Inputs #email{
+.email {
   border: 1px solid var(--Blue);
   border-radius: 25px;
   height: 3.17em;
   font-size: 0.6em;
-  margin-bottom: 0.834em;
   padding: 0 2em;
   color: "#eee";
+  margin-bottom: 0.834em;
 }
-.Inputs #btn{
+
+.error {
+  border: 1px solid var(--LightRed);
+  color: var(--LightRed);
+}
+
+.MsgError {
+  color: var(--LightRed);
+  font-size: 0.5em;
+  text-align: center;
+  margin: 0.5em 0 1.35em 0;
+  display: none;
+}
+
+.Inputs #btn {
   height: 3.17em;
   font-size: 0.6em;
   background-color: var(--Blue);
@@ -71,43 +86,34 @@ body{
   margin-bottom: 3.5em;
 }
 
-.body{
+.body {
   padding: 0 1.45em;
   margin-bottom: 6em;
 }
 
-.body img{
+.body img {
   width: 100%;
   height: 9.525em;
 }
 
-footer{
+footer {
   text-align: center;
   padding-bottom: 1.8em;
 }
-footer .social-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 auto  1.357em 0;
-
-}
-footer ul {
-  background-color: royalblue;
-  padding: 0;
-}
-footer li{
-  background-color: aqua;
-  border: 3px solid red;
-  width: 1.575em;
-  height: 1.575em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+footer li {
+  display: inline;
+  list-style: none;
   color: var(--Blue);
 }
 
-footer p{
-  color:var(--Gray);
+footer li i {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border-radius: 50%;
+  margin: 0 0.5em 1.357em 0.5em;
+}
+footer p {
+  color: var(--Gray);
   font-size: 0.5em;
 }
